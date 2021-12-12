@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/assets/loudspeaker-512.png">
+    <title>Login - Agora</title>
+</head>
+<body>
+    <header>
+        <img src="/assets/loudspeaker-512.png" alt="Agora-Logo" id="logo-agora">
+        <h1 class="agora">Agora</h1>
+    </header>
+    <p id="continue-with">Log in to Agora with:</p>
+    <div class="alt_login">
+        <button>
+            <img src="/assets/icons8-facebook-rodeado-de-círculo-48.png" alt="Agora-Logo" id="logo-fb">FACEBOOK
+        </button>
+        <button> 
+            <img src="assets/icons8-logo-de-google-50.png" alt="Agora-Logo" id="logo-google">GOOGLE</button>
+        <button>
+            <img src="/assets/icons8-mac-os-50.png" alt="Agora-Logo" id="logo-apple">APPLE
+        </button>
+    </div>
+    <h2> OR </h2>
+    <div class="cont_input">
+        <form id="loginform">
+            <label for="fname">Email or username</label>
+            <input type="text" id="fname" name="firstname" placeholder="Email or username">
+            <label for="fname">Password</label>     
+            <input type="password" id="fname" name="firstname" placeholder="Password">
+            <button type="submit" id="login_button" >LOG IN</button>
+        </form>  
+    </div>
+    <div class="cont_center">
+        <form action="/home.html" method="post"></form>
+            <br/><br/>
+            <label for="fname" class="forg_pass">Forgot your password?</label>
+            <br/>
+            <hr>
+            <br/>
+            <label for="fname" style="text-align: center;">Don't have an account?</label>
+            <br/>
+            <a href="/signup.html">
+                <button type="submit" id="signup_button">SIGN UP</button>
+            </a>
+        </form>
+    </div>
+</body>
+</html>
