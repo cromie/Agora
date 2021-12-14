@@ -12,6 +12,10 @@ body{
     flex-direction: column;
     justify-self: center;
     align-items: center;
+    overflow: overlay;
+}
+#body-insideacc{
+    background: linear-gradient(rgb(4, 27, 51), #3a6679);
 }
 header{
     display: flex;
@@ -206,4 +210,241 @@ a{
     font-size: 1.2vw;
     font-family: 'Audiowide';
     color: rgba(255, 255, 255, 0.966);
+}
+
+/* Home */
+
+.side-navbar{
+  height: 100%;
+  width: 230px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.side-navbar a{
+  padding: 2px 8px 2px 16px;
+  text-decoration: none;
+  font-size: 22px;
+  font-family: 'Baloo Bhaijaan 2';
+  color: #818181;
+  display: block;
+}
+.side-navbar a:hover {
+  color: #f1f1f1;
+}
+.navbar{
+    background-color: rgba(179, 179, 179, 0.164);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 0px;
+    padding-top: 0px;
+    width: 100%;
+    position: fixed;
+    backdrop-filter: blur(50px);
+    padding: 5px;
+}
+
+.navbar input{
+    width: 210px;
+    font-size: 20px;
+    padding: 0px 0px 0px 5px;
+    border: none;
+    background-color: transparent;
+    margin-bottom: 3px;
+    margin-right: 1350px;
+}
+.navbar input:focus {
+    outline:none!important;
+}
+.navbar input::placeholder{
+    color: aliceblue;
+}
+.navbar img{
+    height: 35px;
+    width: 35px;
+    padding-top: 0px;
+    padding-left: 200px;
+    padding-right: 0;
+    margin: 0;
+    padding: 0;
+}
+#search-icon{
+    height: 20px;
+    width: 20px;
+    padding-top: 0;
+    padding-right: 5px;
+    padding-left: 20px;
+    margin-left: 235px;
+}
+#agoraside img{
+    padding-left: 0;
+    margin-left: 0;
+    height: 25px;
+    width: 25px;
+}
+#agoraside{
+    height: 50px;
+    padding-bottom: 20px;
+}
+#agoraside h1{
+    height: 50px;
+    padding-bottom: 25px;
+    font-size: 30px;
+}
+.sidenav-items{
+    display: flex;
+    flex-direction: row;
+    padding: 8px 0;
+}
+.sidenav-items img {
+  margin: 0;
+  padding: 0;
+}
+.sidenav-items a {
+  margin-left: 10px;
+  padding: 0;
+}
+.lib-catg a{
+    font-size: 17px;
+    padding-left: 50px;
+    padding-top: 8px;
+}
+.content-album-song {
+    display: flex;
+    /* background-color: green; */
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: 240px;
+    width: 1600px;
+    margin-left:120px;
+}
+.content-artist {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: 340px;
+    width: 1600px;
+    margin-left:120px;
+}
+.first-content-home{
+    display: flex;
+    /* background-color: green; */
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: 240px;
+    width: 1600px;
+    margin-left:120px;
+    margin-top: 70px;
+}
+.title-insideacc{
+    color: rgba(255, 255, 255, 0.966);
+    font-family: 'Baloo Bhaijaan 2';
+    margin-bottom: 0;
+    margin-left: 50px;
+
+}
+.art_container{
+    /* background-color: red; */
+    margin: 0 20px;
+    padding: 0 15px;
+    font-size: 1.5m;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    width: 1600px;
+}
+.album{
+    background-color: rgba(179, 179, 179, 0.164);
+    margin: 20px;
+    padding: 0;
+    font-size: 1.5m;
+    text-align: center;
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: left;
+    align-items: center;
+    width: 340px;
+    left: 0;
+    border-radius: 7px;
+}
+.cover{
+    height: 120px;
+    width: 120px;
+
+}
+.album-name{
+    font-size: 20px;
+    font-family: 'Baloo Bhaijaan 2';
+    padding: 0 20px;
+    color: rgba(255, 255, 255, 0.966);
+}
+.artist{
+    background-color: rgba(179, 179, 179, 0.164);
+    margin: 20px;
+    padding: 0;
+    font-size: 1.5m;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 180px;
+    height: 220px;
+    left: 0;
+    border-radius: 7px;
+}
+.artist img{
+    height: 150px; 
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 12px;
+}
+.artist p{
+    margin: 0;
+    padding-top: 10px;
+}
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.575); 
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(202, 202, 202, 0.719); 
+}
+
+
+
+
+
+
+
+
+/* Player*/
+.player {
+    background-color: rgb(24, 24, 24);
+    /* border-top: 1px solid white; */
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    position: fixed;
 }
